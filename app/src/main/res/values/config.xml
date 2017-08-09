@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="server_address">https://taitihotel-server.herokuapp.com</string>
+
+    <!-- начало и конец сезона -->
+    <!-- january 0; february 1; ... ; december 11 -->
+    <!-- 1th of may -->
+    <integer name="season_start_month">4</integer>
+    <integer name="season_start_day">1</integer>
+    <!-- 30th of september -->
+    <integer name="season_end_month">8</integer>
+    <integer name="season_end_day">30</integer>
+
+    <!-- форматы пишутся в соответствии с форматами SimpleDateFormat -->
+    <!-- формат времени для отображения на устройстве -->
+    <string name="format_date_full">"d MMM yyyy"</string>
+    <string name="format_date_short">dd MMM</string>
+    <string name="format_date_server">yyyy-MM-dd</string>
+</resources>

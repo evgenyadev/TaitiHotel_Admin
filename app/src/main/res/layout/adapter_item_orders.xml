@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/margin_small"
+    android:layout_marginRight="@dimen/margin_small"
+    android:layout_marginTop="@dimen/margin_small"
+    android:background="@color/colorTransparentLightGray"
+    android:padding="@dimen/padding_standard">
+
+    <TextView
+        android:id="@+id/order_tvRoomId"
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        tools:text="5" />
+
+    <TextView
+        android:id="@+id/order_date_begin"
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_gravity="center_vertical"
+
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        tools:text="2017-01-01" />
+
+    <TextView
+        android:id="@+id/order_date_end"
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_gravity="center_vertical"
+
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        tools:text="2018-12-12" />
+
+    <ImageButton
+        android:id="@+id/order_deleteButton"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/round_corners_button_blue"
+        android:src="@android:drawable/ic_delete" />
+
+</LinearLayout>

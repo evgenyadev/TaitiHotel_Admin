@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="3dp"
+    android:layout_marginRight="3dp"
+    android:layout_marginTop="3dp"
+    android:background="@color/colorTransparentLightGray"
+    android:padding="@dimen/padding_standard">
+
+    <ImageButton
+        android:id="@+id/ibtnInfo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/round_button_info"
+        android:src="@android:drawable/ic_dialog_info" />
+
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/phone"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/phone"
+        android:paddingLeft="@dimen/padding_large"
+        android:paddingTop="2dp"
+        android:textStyle="bold"
+        tools:text="Имя Фамилия" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ibtnInfo"
+        android:layout_toRightOf="@+id/ibtnInfo"
+        android:paddingBottom="2dp"
+        android:paddingLeft="@dimen/padding_large"
+        android:textStyle="italic"
+        tools:text="+380 99 4325 6000" />
+
+    <ImageButton
+        android:id="@+id/callButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="@dimen/padding_standard"
+        android:layout_toLeftOf="@+id/deleteButton"
+        android:background="@drawable/round_corners_button_green"
+        android:src="@android:drawable/sym_call_outgoing" />
+
+    <ImageButton
+        android:id="@+id/deleteButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/round_corners_button_blue"
+        android:src="@android:drawable/ic_delete" />
+
+</RelativeLayout>
